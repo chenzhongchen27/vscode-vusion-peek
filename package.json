@@ -1,0 +1,74 @@
+{
+  "name": "vusion-peek",
+  "displayName": "Vue Peek",
+  "description": "Allows peek and goto definition for Vue single-file components.",
+  "version": "1.0.2",
+  "publisher": "dariofuzinato",
+  "icon": "images/vusion-peek-icon.png",
+  "license": "MIT",
+  "keywords": [
+    "vue",
+    "peek",
+    "definition",
+    "file"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chenzhongchen27/vscode-vusion-peek"
+  },
+  "bugs": {
+    "url": "https://github.com/chenzhongchen27/vscode-vusion-peek/issues"
+  },
+  "engines": {
+    "vscode": "^1.14.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "*"
+  ],
+  "main": "./out/src/extension",
+  "contributes": {
+    "commands": [],
+    "configuration": {
+      "title": "Vue Peek extension configuration",
+      "properties": {
+        "vusion-peek.supportedLanguages": {
+          "type": "array",
+          "default": [
+            "vue"
+          ],
+          "items": {
+            "type": "string"
+          },
+          "description": "A list of vscode language names where the extension should be used."
+        },
+        "vusion-peek.targetFileExtensions": {
+          "type": "array",
+          "default": [
+            ".vue"
+          ],
+          "items": {
+            "type": "string"
+          },
+          "description": "A list of extensions that should be tried for finding peeked files. These are tried in order as further extensions of the potential file name and also as alternative file endings instead of the existing file extension (if available)."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "tsc -p ./",
+    "compile": "tsc -watch -p ./",
+    "build": "tsc -p ./",
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "test": "node ./node_modules/vscode/bin/test"
+  },
+  "devDependencies": {
+    "typescript": "^2.0.3",
+    "vscode": "^1.0.0",
+    "mocha": "^2.3.3",
+    "@types/node": "^6.0.40",
+    "@types/mocha": "^2.2.32"
+  }
+}
