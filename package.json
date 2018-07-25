@@ -1,6 +1,6 @@
 {
   "name": "vusion-peek",
-  "displayName": "vusion peek",
+  "displayName": "Vusion Peek",
   "description": "Allows peek and goto definition for Vue single-file components.",
   "version": "0.1.0",
   "publisher": "lingximu",
