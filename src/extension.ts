@@ -24,6 +24,10 @@ export function activate(context: vscode.ExtensionContext) {
     'vue',
     languageConfiguration)
   );
+  context.subscriptions.push(vscode.languages.setLanguageConfiguration(
+    'html',
+    languageConfiguration)
+  );
 }
 
 // this method is called when your extension is deactivated

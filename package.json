@@ -37,7 +37,7 @@
         "vusion-peek.supportedLanguages": {
           "type": "array",
           "default": [
-            "vue"
+            "vue","html"
           ],
           "items": {
             "type": "string"
