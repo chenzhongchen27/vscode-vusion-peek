@@ -1,9 +1,9 @@
 {
   "name": "vusion-peek",
-  "displayName": "Vue Peek",
+  "displayName": "vusion peek",
   "description": "Allows peek and goto definition for Vue single-file components.",
-  "version": "1.0.2",
-  "publisher": "dariofuzinato",
+  "version": "0.1.0",
+  "publisher": "lingximu",
   "icon": "images/vusion-peek-icon.png",
   "license": "MIT",
   "keywords": [
@@ -32,7 +32,7 @@
   "contributes": {
     "commands": [],
     "configuration": {
-      "title": "Vue Peek extension configuration",
+      "title": "vusion peek extension configuration",
       "properties": {
         "vusion-peek.supportedLanguages": {
           "type": "array",
